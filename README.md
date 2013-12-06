@@ -1,4 +1,4 @@
-EC2 CTDB Patches
+CTDB ec2 VIP support
 ====
 
 This project is about collecting scripts to support CTDB based HA
