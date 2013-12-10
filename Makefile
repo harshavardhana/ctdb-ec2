@@ -9,6 +9,7 @@ dist:
 	install -m 0755 interface_modify_ec2.sh $(PACKAGE_DIR)/interface_modify_ec2.sh
 	install -m 0644 ec2.rc $(PACKAGE_DIR)/ec2.rc
 	install -m 0644 ec2-eni-functions $(PACKAGE_DIR)/ec2-eni-functions
+	install -m 0644 ec2-access-key $(PACKAGE_DIR)/ec2-access-key
 	install -m 0644 Makefile $(PACKAGE_DIR)/Makefile
 	install -m 0644 $(PACKAGE_NAME).spec $(PACKAGE_DIR)/$(PACKAGE_NAME).spec
 	install -m 0644 README.md $(PACKAGE_DIR)/README.md

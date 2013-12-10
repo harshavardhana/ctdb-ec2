@@ -1,0 +1,7 @@
+## EDIT THIS FILE
+export ACCESS_ACCESS_KEY=<EDIT>
+export AWS_SECRET_KEY=<EDIT>
+export JAVA_HOME=<java_home>
+export EC2_HOME=<ec2_home>
+export EC2_URL=<region_url> ## example --> "https://ec2.us-west-1.amazonaws.com"
+export PATH=$PATH:$EC2_HOME/bin

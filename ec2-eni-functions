@@ -2,7 +2,7 @@
 
 . $(dirname $0)/ec2.rc
 
-ec2_eni_id=$(declare | grep 'eni-[a-z0-9]' | cut -f2 -d'=')
+ec2_eni_id=$(declare | grep 'eni-[a-z0-9]' | grep '^ec2' | cut -f2 -d'=')
 export ec2_eni_id
 
 add_ec2_secondary_private_ip ()
