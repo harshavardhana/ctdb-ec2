@@ -36,6 +36,7 @@ make all
 %doc README.md
 %config(noreplace) /etc/ctdb/ec2.rc
 %config(noreplace) /etc/ctdb/ec2-eni-functions
+%config(noreplace) /etc/ctdb/ec2-access-key
 /etc/ctdb/interface_modify_ec2.sh
 
 %post
