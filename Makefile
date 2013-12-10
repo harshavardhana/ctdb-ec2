@@ -15,3 +15,7 @@ dist:
 	tar -cvf $(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.gz $(PACKAGE_DIR)
 rpm:
 	make dist && rpmbuild -ta $(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.gz
+
+clean:
+	rm -rvf $(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.gz \
+	$(PACKAGE_NAME)-$(PACKAGE_VERSION)
