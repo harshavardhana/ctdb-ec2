@@ -11,7 +11,7 @@ add_ec2_secondary_private_ip ()
     local _ip=$2
 
     ## EC2 related
-    local_ip=$(ip addr show dev $_iface | grep inet | grep -v secondary | awk {'print $2'} | cut -f1 -d'/')
+    local_ip=$(ifconfig $_iface | grep 'inet addr:' | awk {'print $2'} | cut -f2 -d:)
 
     ## If local ip and ec2 ip mis-match for the given instance exit gracefully.
     [ "$local_ip" != "$ec2_local_ipv4" ] && {
@@ -27,7 +27,7 @@ delete_ec2_secondary_private_ip ()
     local _ip=$2
 
     ## EC2 related
-    local_ip=$(ip addr show dev $_iface | grep inet | grep -v secondary | awk {'print $2'} | cut -f1 -d'/')
+    local_ip=$(ifconfig $_iface | grep 'inet addr:' | awk {'print $2'} | cut -f2 -d:)
 
     ## If local ip and ec2 ip mis-match for the given instance exit gracefully.
     [ "$local_ip" != "$ec2_local_ipv4" ] && {
