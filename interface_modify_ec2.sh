@@ -8,7 +8,7 @@ MASKBITS=$4
 READD_BASE=$5
 READD_SCRIPT=$6
 
-. $(dirname $0)/ec2-access-key
+. $(dirname $0)/ec2-config
 . $(dirname $0)/ec2-eni-functions
 
 add_ip_to_iface()

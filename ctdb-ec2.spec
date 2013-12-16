@@ -25,7 +25,7 @@ make all
 
 %{__install} -p -m 0644 ec2.rc %{buildroot}%{_sysconfdir}/ctdb
 %{__install} -p -m 0644 ec2-eni-functions %{buildroot}%{_sysconfdir}/ctdb
-%{__install} -p -m 0644 ec2-access-key %{buildroot}%{_sysconfdir}/ctdb
+%{__install} -p -m 0644 ec2-config %{buildroot}%{_sysconfdir}/ctdb
 %{__install} -p -m 0755 interface_modify_ec2.sh %{buildroot}%{_sysconfdir}/ctdb/interface_modify_ec2.sh
 
 %clean
@@ -36,7 +36,7 @@ make all
 %doc README.md
 %config(noreplace) /etc/ctdb/ec2.rc
 %config(noreplace) /etc/ctdb/ec2-eni-functions
-%config(noreplace) /etc/ctdb/ec2-access-key
+%config(noreplace) /etc/ctdb/ec2-config
 /etc/ctdb/interface_modify_ec2.sh
 
 %post
