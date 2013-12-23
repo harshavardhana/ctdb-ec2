@@ -13,6 +13,7 @@ dist:
 	install -m 0644 Makefile $(PACKAGE_DIR)/Makefile
 	install -m 0644 $(PACKAGE_NAME).spec $(PACKAGE_DIR)/$(PACKAGE_NAME).spec
 	install -m 0644 README.md $(PACKAGE_DIR)/README.md
+	install -m 0644 COPYING $(PACKAGE_DIR)/COPYING
 	tar -cvf $(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.gz $(PACKAGE_DIR)
 rpm:
 	make dist && rpmbuild -ta $(PACKAGE_NAME)-$(PACKAGE_VERSION).tar.gz

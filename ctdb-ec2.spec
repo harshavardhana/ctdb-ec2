@@ -33,7 +33,7 @@ make all
 
 %files
 %defattr(-,root,root)
-%doc README.md
+%doc README.md COPYING
 %config(noreplace) /etc/ctdb/ec2.rc
 %config(noreplace) /etc/ctdb/ec2-eni-functions
 %config(noreplace) /etc/ctdb/ec2-config
