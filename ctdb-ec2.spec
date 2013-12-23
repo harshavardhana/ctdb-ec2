@@ -1,6 +1,6 @@
 Summary: EC2 support for Clustered Database based on Samba Trivial Database
 Name: ctdb-ec2
-Version: 1.1
+Version: 1.2
 Release: 1%{?dist}
 License: GPLv3+
 Group: System Environment/Daemons
